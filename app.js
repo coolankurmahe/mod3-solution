@@ -33,7 +33,7 @@ function NarrowItDownController(MenuSearchService) {
 
 
     menu.srchtext ="";
-    menu.foundList=[];
+    menu.narrowList=[];
     menu.displaymsg = "";
     menu.narrowDown = function()
     {
@@ -49,7 +49,7 @@ function NarrowItDownController(MenuSearchService) {
              menu.displaymsg = "";
 
 
-          menu.foundList = menuList;
+          menu.narrowList = menuList;
 
          })
          .catch(function (error) {
@@ -60,7 +60,7 @@ function NarrowItDownController(MenuSearchService) {
 
     menu.removeItem = function (itemIndex) {
 //      console.log("Inside Remove");
-      menu.foundList.splice(itemIndex,1);
+      menu.narrowList.splice(itemIndex,1);
 
   };
 
